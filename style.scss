@@ -1,0 +1,79 @@
+//variables
+$my-font: arial,sans-serif;
+$text-color: whitesmoke;
+$menu-color: grey;
+$star-font: americantypewriter,sans-serif;
+$my-background: black;
+$my-padding: 10px;
+$align: center;
+$nonedec: none;
+
+body{
+    background-image: url('images/galaxy.jpg');
+}
+h1{
+    color: yellow;
+    font-family: $star-font;
+    text-align:$align;
+}
+h2,h3,h4{
+    color: $text-color;
+    font-family: $star-font;
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+p,figcaption{
+    font-family: $my-font;
+    font-size: 18px;
+    color: $text-color;
+    padding: $my-padding;
+    line-height: 25px;
+}
+
+.menu{
+    text-align:$align;
+    list-style:$nonedec;
+    li{
+        display:inline-block;
+        padding:$my-padding;
+        a{
+            font-family: $star-font;
+            text-decoration:$nonedec;
+            margin:  $my-padding;;
+            color: $menu-color;
+            &:hover{
+                color: lighten($menu-color,30%);
+            }
+        }
+    }
+}
+
+.footer {
+    @extend .menu;
+}
+.bladerun {
+    padding: 10px;
+    background:linear-gradient(to bottom,rgb(99, 102, 129) 0%, black 100%);
+    h4{
+        text-align:left;
+        padding: 0px 0px 0px 20px;
+    }
+    figcaption {
+        font-style: italic;
+        padding:$my-padding;
+        text-align: $align;
+      }
+    img{
+        width:48%;
+        padding: $my-padding;
+    }
+}
+.aspaceo{
+    @extend .bladerun;
+    background:linear-gradient(to bottom,black 0%, black 100%);
+}
+.alien{
+   @extend .bladerun; 
+   background:linear-gradient(to bottom,black 0%,rgb(99, 102, 129) 100%);
+}

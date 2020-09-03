@@ -1,0 +1,56 @@
+body {
+  background-image: url("images/galaxy.jpg"); }
+
+h1 {
+  color: yellow;
+  font-family: americantypewriter, sans-serif;
+  text-align: center; }
+
+h2, h3, h4 {
+  color: whitesmoke;
+  font-family: americantypewriter, sans-serif;
+  padding-left: 20px;
+  font-size: 25px; }
+
+p, figcaption {
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  color: whitesmoke;
+  padding: 10px;
+  line-height: 25px; }
+
+.menu, .footer {
+  text-align: center;
+  list-style: none; }
+  .menu li, .footer li {
+    display: inline-block;
+    padding: 10px; }
+    .menu li a, .footer li a {
+      font-family: americantypewriter, sans-serif;
+      text-decoration: none;
+      margin: 10px;
+      color: grey; }
+      .menu li a:hover, .footer li a:hover {
+        color: #cdcdcd; }
+
+.bladerun, .aspaceo, .alien {
+  padding: 10px;
+  background: linear-gradient(to bottom, #636681 0%, black 100%); }
+  .bladerun h4, .aspaceo h4, .alien h4 {
+    text-align: left;
+    padding: 0px 0px 0px 20px; }
+  .bladerun figcaption, .aspaceo figcaption, .alien figcaption {
+    font-style: italic;
+    padding: 10px;
+    text-align: center; }
+  .bladerun img, .aspaceo img, .alien img {
+    width: 48%;
+    padding: 10px; }
+
+.aspaceo {
+  background: linear-gradient(to bottom, black 0%, black 100%); }
+
+.alien {
+  background: linear-gradient(to bottom, black 0%, #636681 100%); }
+
+/*# sourceMappingURL=style.css.map */
